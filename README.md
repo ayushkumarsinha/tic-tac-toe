@@ -6,6 +6,10 @@ Clone this project from git
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the missing node modules/packages.
+
 ### `npm start`
 
 Runs the app in the development mode.\
