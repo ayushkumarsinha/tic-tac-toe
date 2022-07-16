@@ -80,8 +80,12 @@
     .info {
 		width: 100%;
     }
+	.player-details{
+		width: 20rem;
+	}
 	.player {
 		padding: 0.625rem;
 		margin: 0.625rem;
+		font-size: 1rem;
 	}
 }
