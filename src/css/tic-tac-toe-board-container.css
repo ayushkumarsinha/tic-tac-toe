@@ -1,0 +1,51 @@
+/* The size and placement of the container to place all the game related information */
+.tic-tac-toe {
+	width: 31.25rem;
+	height: 31.25rem;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* Restart Game button style */
+.restart-game {
+	background-color: rgb(90, 90, 220);
+	border: none;
+	border-radius: 50%;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 1.125rem;
+	font-weight: 500;
+	padding: .75rem 1.2rem;
+	transition-duration: .2s;
+}
+
+/* Restart Game button style when it is hovered */
+.restart-game:hover {
+	background-color: rgb(30, 30, 220);
+}
+
+/* Restart Game button style when it is clicked */
+.restart-game:active {
+	background-color: rgb(30, 30, 220);
+	transform: translateY(0.125rem);
+}
+
+/* To show who won the match */
+.winner {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: green;
+	text-align: center;
+	min-height: 1.875rem;
+}
+
+/* Styling to handle mobile view */
+@media (min-width: 992px) {
+	.restart-game {
+		padding: .75rem 1.5rem;
+	}
+};
+

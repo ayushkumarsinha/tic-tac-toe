@@ -1,0 +1,87 @@
+/* Declaring variables used at more than one place */
+:root {
+	--board-background: none;
+	--border-color: rgb(200, 0, 0);
+	--border-thickness: 0.3125rem;
+}
+
+/* The size and placement of the tic-tac-toe board */
+.board {
+	width: 70%;
+	min-height: 70%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+    cursor: pointer;
+}
+
+/* The size and placement of each tic-tac-toe box */
+.tic-box {
+	height: 33.33%;
+	width: 33.33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(50, 50, 220);
+	font-family: sans-serif;
+	font-weight: 200;
+	font-size: 3.5rem;
+}
+
+/* To show red color borders in tic-tac-toe box */
+.tic-box-1, .tic-box-2, .tic-box-4, .tic-box-5 {
+	border-right: var(--border-thickness) solid var(--border-color);
+	border-bottom: var(--border-thickness) solid var(--border-color);
+}
+
+.tic-box-3, .tic-box-6 {
+	border-bottom: var(--border-thickness) solid var(--border-color);
+}
+
+.tic-box-7, .tic-box-8 {
+	border-right: var(--border-thickness) solid var(--border-color);
+}
+
+/* The player details placement on the screen and common stylings */
+.player-details {
+	width: 30vw;
+	margin-top: 0.625rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #000000;
+}
+
+/* Each player info of 'X' and 'O' assignment */
+.player {
+	border-radius: 10%;
+	padding: .5rem 0;
+	display: flex;
+	font-size: 1.5rem;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	font-weight: 500;
+}
+
+/* To highlight whose chance is it */
+.chance {
+	border: 0.125rem solid green;
+	border-radius: 50%;
+}
+
+/* Styling to handle mobile view */
+@media(max-width: 992px){
+	.board {
+		width: 50%;
+		min-height: 50%;
+	}
+    .info {
+		width: 100%;
+    }
+	.player {
+		padding: 0.625rem;
+		margin: 0.625rem;
+	}
+}
